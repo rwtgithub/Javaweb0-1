@@ -34,6 +34,10 @@ public class Customer {
         return remark;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void setId(long id) {
         this.id = id;
     }
@@ -56,5 +60,10 @@ public class Customer {
 
     public void setRemark(String remark) {
         this.remark = remark;
+    }
+
+    @Override
+    public String toString() {
+        return this.id+" "+this.name+" "+this.contact+" "+this.telephone+" "+this.email+" "+this.remark+"\n";
     }
 }
